@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vijay — Promotional Page</title>
+  <meta name="description" content="Official promotional page for actor Vijay (Thalapathy)." />
+  <style>
+    :root{--accent:#e53935;--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071025 0%,#071521 100%)}
+    .hero{display:flex;align-items:center;justify-content:center;padding:48px 16px;background:linear-gradient(90deg,rgba(229,57,53,0.06),transparent)}
+    .hero-inner{max-width:1100px;display:flex;gap:32px;align-items:center;width:100%}
+    .hero-img{width:300px;height:300px;object-fit:cover;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6);flex:0 0 300px}
+    .hero-copy h1{margin:0;font-size:40px;letter-spacing:0.5px}
+    .tagline{color:var(--muted);margin:8px 0 18px}
+    .btn{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+    .container{max-width:1100px;margin:32px auto;padding:0 16px}
+    .card{background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;margin-bottom:20px}
+    .bio p{line-height:1.6;color:#d7e6f5}
+    .facts{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px}
+    .fact{background:rgba(255,255,255,0.02);padding:10px 12px;border-radius:8px;color:var(--muted);font-weight:600}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px}
+    .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+    footer{max-width:1100px;margin:24px auto;padding:0 16px;color:var(--muted);font-size:14px}
+    @media (max-width:720px){.hero-inner{flex-direction:column;text-align:center}.hero-img{width:220px;height:220px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <img class="hero-img" src="https://via.placeholder.com/600x600?text=Vijay+Image" alt="Actor Vijay" />
+      <div class="hero-copy">
+        <h1>Vijay</h1>
+        <p class="tagline">Thalapathy — Tamil Cinema Superstar</p>
+        <p style="max-width:520px;color:#cfe7ff">Vijay is a leading actor in Tamil cinema known for charismatic performances and mass appeal. This page highlights his latest work, biography, and media.</p>
+        <p style="margin-top:18px"><a class="btn" href="https://www.youtube.com/results?search_query=vijay+official+trailer" target="_blank" rel="noopener">Watch Latest Trailer</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card bio">
+      <h2>Biography</h2>
+      <p>Vijay (often referred to as "Thalapathy") is an Indian film actor and playback singer who works predominantly in Tamil cinema. Known for his energetic screen presence and commercial hits, he has a large fan following across India and internationally.</p>
+      <div class="facts" aria-hidden="true">
+        <div class="fact">Industry: Tamil Cinema</div>
+        <div class="fact">Years active: 1992 — present</div>
+        <div class="fact">Notable: Mass entertainer, charismatic performances</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/400x250?text=Promo+1" alt="Promo 1" />
+        <img src="https://via.placeholder.com/400x250?text=Promo+2" alt="Promo 2" />
+        <img src="https://via.placeholder.com/400x250?text=Promo+3" alt="Promo 3" />
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Trailer</h2>
+      <p style="color:var(--muted);">Embedded trailer placeholder — replace the iframe src with the official YouTube video ID.</p>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/" title="Vijay Trailer" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div style="max-width:1100px;margin:0 auto;padding:0 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>Connect: <a href="https://www.instagram.com/" target="_blank">Instagram</a> • <a href="https://twitter.com/" target="_blank">Twitter</a></div>
+      <div style="color:var(--muted)">Promo page generated locally — replace placeholders with official assets.</div>
+    </div>
+  </footer>
+</body>
+</html>
